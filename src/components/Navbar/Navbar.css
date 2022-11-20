@@ -1,0 +1,113 @@
+.navbar{
+    position:fixed;
+    z-index:3;
+    /* top:0; */
+    width:95vw;
+    background-color:transparent;
+    backdrop-filter: blur(5px);
+    /* background-color:transparent; */
+    height:4rem;
+    padding:0.7rem 40px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.netflixLogo{
+    height:30px;
+} 
+.navbar.active{
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,1) 36%, rgba(0,0,0,0.9668242296918768) 97%);    
+}
+.list{
+    height:100%;
+    padding:0 20px 0 30px;
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content:flex-start;
+}
+.list li{
+    margin-right:34px;
+    cursor:pointer; 
+   
+}
+.list li a:hover{
+    color:rgb(96, 105, 103);
+}
+.mobList{
+    position:relative;
+    display:none;
+    /* flex:1; */
+    justify-self: left;
+    cursor: pointer;
+    margin-left:30px;
+}
+.mobListToolTip{
+    position:absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top:3rem;
+    left:-96px;
+    width:15rem;
+    padding:0;
+    border:1px solid gray;
+    border-top:2px solid white;
+}
+/* .mobList:hover .mobListToolTip{
+    display:flex;
+    
+} */
+.mobListToolTip .fa-caret-up{
+    position: absolute;
+    top:-10px;
+    left:112px;
+}
+.mobListToolTip .list{
+    padding: 0;
+    background-color: rgba(18, 15, 15, 0.896);
+    display:flex;
+    flex-direction:column; 
+}
+
+.mobListToolTip li{
+    display:grid;
+    height:3rem;
+    place-items: center;
+    width:100%;
+    margin:0;
+}
+.mobListToolTip li:hover{
+     background-color: rgba(24, 24, 24, 0.556);
+     color:white;
+}
+.avatar img{
+    height: 35px;;
+}
+
+/* media applied */
+@media only screen and (max-width: 900px) {
+    
+    .navbar{
+        height: 2rem;
+        padding:0.7rem 1rem 0 1rem;
+    }
+    .netflixLogo{
+        height:20px;
+    } 
+    .list{
+        display:none;
+     }
+     .mobList{
+        display:block;
+        font-size:13px;
+     }
+     .avatar{
+        flex:1;
+        text-align: right;
+     }
+     .avatar img{
+        height: 20px;
+     }
+}

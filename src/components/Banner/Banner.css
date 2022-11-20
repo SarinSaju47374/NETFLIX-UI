@@ -1,0 +1,81 @@
+.banner{
+    color:black;
+    /* background-color: rgb(63, 147, 220); */
+    position: relative;
+    /* background-size: cover;   */
+    
+    width:100vw;
+    height:calc(95/100 * 100vh);
+    object-fit:cover;
+    overflow:hidden;
+}
+.movie-title{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.movie-det{
+    position:absolute;
+    left:2rem;
+    top:15rem;
+}
+.btn{
+    color:black;
+    padding:0 2rem;
+    height:2.4rem;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right:1.3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius:4px;
+    border:none;
+}
+.btn:hover{
+    opacity:0.8;
+}
+.list-btn{
+    background-color: rgba(87, 85, 85, 0.616);
+    color:white;
+}
+.banner-shd{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 3rem;
+    background: rgb(20,20,20);
+    background: linear-gradient(0deg, rgba(20,20,20,0.8211659663865546) 15%, rgba(20,20,20,0.6811099439775911) 43%, rgba(20,20,20,0.5550595238095238) 62%, rgba(20,20,20,0) 91%);
+}
+
+@media only screen and (max-width: 550px) {
+    .banner{
+        height:17rem;
+    }
+    .movie-title{
+        font-size: 16px;
+    }
+    .movie-det{
+        left:2rem;
+        top:10rem;
+    }
+    .btn{ 
+        height:1.5rem;
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width:550px)and (max-width: 960px) {
+    .banner{
+        height:28rem;
+         
+    }
+    .movie-title{
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+    .movie-det{
+        left:2rem;
+        top:13rem;
+    }
+    .btn{ 
+        height:1.5rem;
+        font-size: 10px;
+    }
+}
